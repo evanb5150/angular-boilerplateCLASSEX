@@ -1,4 +1,12 @@
 //toggle button
+
+document.querySelector('#dup').addEventListener('click', (e) => {
+      
+  let p = document.getElementById("card");
+  let d = p.cloneNode(true);
+  document.body.appendChild(d);
+      });
+      
 const details = document.querySelector('summary');
 
 document.querySelector('button[data-toggle-btn]').addEventListener('click', (e) => {
